@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- <link rel="stylesheet" href="../css/login.css"> -->
+
+
+</head>
+
+<body>
+    <div class="wrapper-login device-width-height">
+        <div class="login-container">
+            <div class="login-logo d-flex ">
+                <img src="../assets/images/logo.png" alt="logo">
+            </div>
+
+            <!-- title -->
+            <div class="login-title d-flex justify-content-center mt-4">
+                <div class="title text-center">
+                    TỔNG KHO THỜI TRANG THƯƠNG HIỆU VIỆT
+                </div>
+
+            </div>
+            <!-- form login -->
+            <div class="form-login">
+                <form id="formLogin">
+                    <!-- user -->
+                    <div class="form-input d-flex justify-content-center p-2">
+                        <div class="d-flex align-items-center ms-3">
+                            <span><i class="fa-regular fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Đăng nhập">
+                    </div>
+                    <!-- password -->
+                    <div class="form-input d-flex justify-content-center p-2 mt-3">
+                        <div class="d-flex align-items-center ms-3">
+                            <span><i class="fa-solid fa-lock"></i></span>
+                        </div>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <div class="d-flex align-items-center me-3">
+                            <span onclick="passwordShow()" id="showEye"><i class="fa-regular fa-eye-slash"></i></span>
+                            <span onclick="passwordHide()" id="hideEye"><i class="fa-regular fa-eye"></i></span>
+                        </div>
+                        <span id="passwordError"></span>
+                    </div>
+
+                    <div class="input-check-remember d-flex justify-content-between mt-2 p-2">
+                        <div class="d-flex align-items-center">
+                            <input type="checkbox" name="" id="remember-checkbox">
+                            <label for="remember-checkbox"></label>
+                            <span class="ms-1">Nhớ mật khẩu</span>
+                        </div>
+                        <div class="forgot-pass">
+                            <a href="#">Quên mật khẩu</a>
+                        </div>
+                    </div>
+
+                    <div class="btn-login d-flex justify-content-center mt-2">
+                        <button type="submit" class="p-2"><span>Login</span></button>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5 text-white">
+                        <span>website thuộc quản lí hàng hiệu việt</span>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        <script>
+            const password = document.getElementById('password');
+            const showEye = document.getElementById('showEye');
+            const hideEye = document.getElementById('hideEye');
+            const passwordError = document.getElementById('passwordError');
+            const formLogin = document.getElementById('formLogin');
+
+            function passwordShow() {
+                password.type = 'text';
+                showEye.style.display = 'none';
+                hideEye.style.display = 'inline';
+                password.focus();
+            }
+
+            function passwordHide() {
+                password.type = 'password';
+                showEye.style.display = 'inline';
+                hideEye.style.display = 'none';
+                password.focus();
+            }
+            form.addEventListener('submit', function (event) {
+
+
+            })
+        </script>
+    </div>
+</body>
+
+</html>

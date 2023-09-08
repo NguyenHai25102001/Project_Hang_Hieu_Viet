@@ -1,0 +1,17 @@
+@import url('login.css');
+@import url('bootstrap.min.css');
+@import url('../assets/fonts/fontwesome/all.css');
+@import url('home.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.device-width-height {
+    max-width: 455px;
+    min-height: 788px;
+}
