@@ -28,29 +28,31 @@
             <div class="form-login">
                 <form id="formLogin">
                     <!-- user -->
-                    <div class="form-input d-flex justify-content-center p-2">
-                        <div class="d-flex align-items-center ms-3">
+                    <div class="form-input d-flex align-items-center">
+                        <div class="d-flex align-items-center ms-3 me-2">
                             <span><i class="fa-regular fa-user"></i></span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Đăng nhập">
+                        <input type="text" class="" id="name" placeholder="Đăng nhập">
                     </div>
+                    <span class=" text-danger" id="nameError"></span>
                     <!-- password -->
-                    <div class="form-input d-flex justify-content-center p-2 mt-3">
-                        <div class="d-flex align-items-center ms-3">
+                    <div class="form-input d-flex align-items-center mt-3">
+                        <div class="d-flex align-items-center ms-3 me-2">
                             <span><i class="fa-solid fa-lock"></i></span>
                         </div>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" class="" id="password" placeholder="Password" name="password">
                         <div class="d-flex align-items-center me-3">
                             <span onclick="passwordShow()" id="showEye"><i class="fa-regular fa-eye-slash"></i></span>
                             <span onclick="passwordHide()" id="hideEye"><i class="fa-regular fa-eye"></i></span>
                         </div>
-                        <span id="passwordError"></span>
+
                     </div>
+                    <span id="passwordError" class="p-2 text-danger"></span>
 
                     <div class="input-check-remember d-flex justify-content-between mt-2 p-2">
                         <div class="d-flex align-items-center">
                             <input type="checkbox" name="" id="remember-checkbox">
-                            <label for="remember-checkbox"></label>
+                            <label for="remember-checkbox">.</label>
                             <span class="ms-1">Nhớ mật khẩu</span>
                         </div>
                         <div class="forgot-pass">
@@ -75,6 +77,8 @@
             const hideEye = document.getElementById('hideEye');
             const passwordError = document.getElementById('passwordError');
             const formLogin = document.getElementById('formLogin');
+            const name = document.getElementById('name');
+            const nameError = document.getElementById('nameError');
 
             function passwordShow() {
                 password.type = 'text';
@@ -89,10 +93,31 @@
                 hideEye.style.display = 'none';
                 password.focus();
             }
-            form.addEventListener('submit', function (event) {
+            formLogin.addEventListener('submit', function (event) {
+                let isValid = true;
 
+                // Kiểm tra mật khẩu
+                if (password.value.trim() === '') {
+                    passwordError.textContent = 'Vui lòng nhập mật khẩu';
+                    isValid = false;
+                } else {
+                    passwordError.textContent = '';
+                }
 
-            })
+                //kiểm tra tên đăng nhập
+                if (name.value.trim() === '') {
+                    nameError.textContent = 'Vui lòng nhập tên.';
+                    isValid = false;
+                } else {
+                    nameError.textContent = '';
+                }
+
+                console.log(isValid);
+
+                if (!isValid) {
+                    event.preventDefault(); // Ngăn form gửi đi nếu có lỗi
+                }
+            });
         </script>
     </div>
 </body>

@@ -2,6 +2,9 @@
 @import url('bootstrap.min.css');
 @import url('../assets/fonts/fontwesome/all.css');
 @import url('home.css');
+@import url('thong_tin_shop.css');
+@import url('setting_product.css');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed&display=swap');
 
 * {
     padding: 0;
@@ -14,4 +17,14 @@
 .device-width-height {
     max-width: 455px;
     min-height: 788px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: 0;
+    border: 0;
+    background: transparent;
 }

@@ -1,0 +1,323 @@
+.bg-00426D {
+    background: #00426D;
+}
+
+.setting-product .sp-main {}
+
+.sp-main .sp-head {
+    padding: 0.75rem 1.5rem;
+}
+
+.sp-main .sp-head a img {
+    width: 1.25rem;
+}
+
+.sp-main .sp-head p {
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+
+.setting-product .sp-content {
+    background: #FCAF1D;
+    height: 100vh;
+}
+
+.bg-FCAF1D {
+    background: #FCAF1D !important;
+}
+
+.sp-content .sp-title-item {
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    background: white;
+    font-weight: 400;
+}
+
+.bg-title-item {
+    background: #8C52FF !important;
+    color: white;
+}
+
+.sp-content .sp-list {
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sp-list .sp-item {
+    width: 50%;
+
+}
+
+.item-content {
+    background: white;
+}
+
+.item-content .item-img {
+    padding-top: 100%;
+
+}
+
+.item-content .sp-item-info {
+    padding: 0.25rem 0.5rem 0 0.5rem;
+}
+
+.sp-item-info .item-shop p {
+    font-size: 0.75rem;
+    font-weight: 500;
+    opacity: 0.5;
+    text-transform: uppercase;
+}
+
+.sp-item-info .item-name {
+    max-width: 100%;
+}
+
+.sp-item-info .item-name p {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.sp-item-info .item-price p {
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #F6E396;
+}
+
+.sp-item-info .item-money-received p {
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.sp-item-info .item-money-received span {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #B1F4A6;
+}
+
+.item-content .copy-link-item {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #46B7A5;
+    padding: 0.25rem;
+
+}
+
+.copy-link-item p {
+    color: white;
+    font-size: 0.75rem;
+}
+
+.sp-list .sp-item:nth-child(odd) {
+    padding-right: 0.5rem;
+}
+
+.sp-list .sp-item:nth-child(even) {
+    padding-left: 0.5rem;
+}
+
+.sp-list .sp-item:nth-child(n+3) {
+    margin-top: 1rem;
+}
+
+.delete {
+    position: fixed;
+    width: 2.5rem;
+    top: 70%;
+    right: 1rem;
+    z-index: 99;
+
+}
+
+.delete img {
+    max-width: 100%;
+}
+
+.delete span {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.sp-item .check {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 99;
+}
+
+.sp-item .check input[type="checkbox"] {
+    display: none;
+}
+
+.sp-item .check input[type="checkbox"]+label {
+    display: inline-block;
+    width: 20px;
+    /* Kích thước chiều rộng của checkbox */
+    height: 20px;
+    /* Kích thước chiều cao của checkbox */
+    background-color: #fff;
+    border: 1px solid #FCAF1D;
+
+    border-radius: 50%;
+    /* Làm cho checkbox trở thành hình tròn */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sp-item .check input[type="checkbox"]:checked+label {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.sp-item .check label:hover {
+    background-color: #f0f0f0;
+    /* Màu nền khi hover */
+}
+
+.sp-item .check label {
+    position: absolute;
+}
+
+.loc {
+    position: fixed;
+    top: 65%;
+    z-index: 99;
+    right: 1rem;
+}
+
+.loc img {
+    width: 2.5rem;
+}
+
+.bg-2A4DB2 {
+    background: #2A4DB2 !important;
+}
+
+.adds-sp {}
+
+.adds-sp .adds-sp-content {
+    padding: 1rem 2rem 0 2rem;
+}
+
+.adds-sp .title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+
+
+.add-select select::-ms-expand {
+    display: none;
+    background: red;
+}
+
+.add-select select {
+    background: transparent;
+    border: 1px solid #005CD6;
+    color: white;
+    font-size: 1rem;
+    font-weight: 300;
+    border-radius: 5px;
+    padding: 0.25rem 0.25rem;
+    outline: none;
+}
+
+.add-select select option {
+    color: black;
+}
+
+.sp-main hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem !important;
+    border-top: #9584FF solid;
+}
+
+.select-th {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sle-th-item {
+    width: 25%;
+    padding: 0.25rem 0.25rem;
+
+}
+
+.sle-th-item .th-item-content {
+    padding-top: 50%;
+}
+
+
+.label-input {
+    position: absolute;
+    top: 0.05rem;
+    left: 0.5rem;
+    z-index: 99;
+}
+
+.label-input input[type="checkbox"] {
+    display: none;
+}
+
+.label-input input[type="checkbox"]+label {
+    display: inline-block;
+    width: 1rem;
+    /* Kích thước chiều rộng của checkbox */
+    height: 1rem;
+    /* Kích thước chiều cao của checkbox */
+    background-color: #fff;
+    border: 1px solid #FCAF1D;
+
+    border-radius: 50%;
+    /* Làm cho checkbox trở thành hình tròn */
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.label-input input[type="checkbox"]:checked+label {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.label-input label:hover {
+    background-color: #f0f0f0;
+    /* Màu nền khi hover */
+}
+
+.list-nh {
+    width: 100%;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+
+
+}
+
+.nh-item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nh-item-content {
+    padding-top: 50%;
+}
+
+.nh-item span {
+    padding-top: 0.2rem;
+    color: white;
+    font-size: 0.8rem;
+}

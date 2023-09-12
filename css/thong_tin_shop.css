@@ -1,0 +1,69 @@
+.shop-info {
+    background: #0F3148;
+    height: auto !important;
+}
+
+.shop-info .container {
+
+    padding: 0 10%;
+}
+
+.shop-info .shop-info-header {
+    /* padding-top: 3rem; */
+    color: white;
+}
+
+.shop-info-header span,
+.shop-info-header p {
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.shop-info-header a span img {
+    width: 1rem;
+}
+
+.shop-info-header p {
+
+    text-transform: uppercase;
+}
+
+.shop-form p {
+    font-size: 0.75rem;
+    color: white;
+    text-transform: uppercase !important;
+    font-weight: 700;
+}
+
+.shop-form form {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    background: white;
+    border-radius: 10px;
+}
+
+.shop-form form .si {
+    margin: 0 0 1.25rem 0;
+}
+
+.shop-form form {}
+
+.shop-form-input {
+    background-color: #D4D4D4;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+.shop-form form button {
+    background: #5548E4;
+    color: white;
+    outline: 0;
+    border: 0;
+    padding: 0.25rem 2rem;
+    border-radius: 10px;
+}
+
+.shop-form-input input {
+    background: transparent;
+    outline: none;
+    border: 0;
+}
