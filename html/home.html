@@ -11,7 +11,7 @@
 <body>
 
     <div class="wrapper-main">
-        <div class="home-header">
+        <div class="home-header position-relative">
             <div class="d-flex justify-content-between align-items-center">
                 <button class="header-bar icon" id="btnMenu">
                     <span><i class="fa-solid fa-bars"></i></span>
@@ -56,16 +56,33 @@
 
             </div>
 
+            <div style="height: 3rem; aspect-ratio: 1/1;
+            background-color: white;position: absolute; left: 0; bottom: 0;">
+                <div style="
+                 background: #5D71C9;width: 100%; height: 100% ; border-bottom-left-radius: 100%;
+                ">
+                </div>
+            </div>
+
         </div>
 
     </div>
     </div>
-    <div class="mh-setting p-2">
-        <div class="mhs-head d-flex justify-content-between align-items-center ps-2">
+    <div class="mh-setting p-2 position-relative">
+        <div style="height: 3rem; aspect-ratio: 1/1;
+        background-color: #5D71C9;position: absolute; right: 0; top: 0; z-index: -1;">
+            <div style="
+             background: white;width: 100%; height: 100% ; border-top-right-radius: 100%;
+            ">
+            </div>
+        </div>
+
+
+        <div class="mhs-head d-flex justify-content-between align-items-center ps-2 mt-2">
             <div class="title">
                 Cài Đặt
             </div>
-            <div class="icon">
+            <div class="icon me-1">
                 <i class="fa-solid fa-ellipsis"></i>
             </div>
         </div>
@@ -83,7 +100,7 @@
                 <div class="list-item-img p-3">
                     <img src="../assets/images/thong-tin.png" alt="">
                 </div>
-                <div class="d-flex justify-content-center mt-1">
+                <div class="d-flex justify-content-center mt-1 ">
                     <span>Thông tin</span>
                 </div>
 
@@ -209,7 +226,7 @@
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </div>
                                 </div>
-                                <div class="tkdl-content text-center text-white d-flex align-items-center">
+                                <div class="tkdl-content text-center text-white d-flex align-items-center ">
                                     <div>
                                         <span class="">872</span>
                                         <div>
@@ -312,11 +329,11 @@
                             <div class="dskh-content">
                                 <div class="dskh-item-content text-center">
                                     <p>1689</p>
-                                    <span>xem chi tiết</span>
+                                    <p class="details">xem chi tiết</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <span class="dskh-title">Danh sách khách hàng</span>
+                                <span class="dskh-title">Khách hàng mua nhiều lần</span>
                             </div>
 
                         </div>
@@ -324,11 +341,11 @@
                             <div class="dskh-content">
                                 <div class="dskh-item-content text-center">
                                     <p>1689</p>
-                                    <span>xem chi tiết</span>
+                                    <p class="details">xem chi tiết</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <span class="dskh-title">Khách hàng Link Affiliate</span>
+                                <span class="dskh-title">Khách hàng mua nhiều lần</span>
                             </div>
 
                         </div>
@@ -336,11 +353,11 @@
                             <div class="dskh-content">
                                 <div class="dskh-item-content text-center">
                                     <p>1689</p>
-                                    <span>xem chi tiết</span>
+                                    <p class="details">xem chi tiết</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <span class="dskh-title">Khách hàng mua 1 lần</span>
+                                <span class="dskh-title">Khách hàng mua nhiều lần</span>
                             </div>
 
                         </div>
@@ -348,7 +365,7 @@
                             <div class="dskh-content">
                                 <div class="dskh-item-content text-center">
                                     <p>1689</p>
-                                    <span>xem chi tiết</span>
+                                    <p class="details">xem chi tiết</p>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-center">
@@ -402,7 +419,7 @@
             </div>
             <div class="list-menu mt-2">
                 <div class="menu-item">
-                    <a class="d-flex align-items-center">
+                    <a class="d-flex align-items-center" href="thong_tin_shop.html">
                         <div><img src="../assets/images/icon-thongtin.png" alt=""></div>
                         <div class="ms-3">
                             <p>Thông tin shop</p>
@@ -447,7 +464,7 @@
 
                 </div>
                 <div class="menu-item">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="SP_WEB.html" class="d-flex align-items-center">
                         <div><img src="../assets/images/icon-search.png" alt=""></div>
                         <div class="ms-3">
                             <p>Chọn sản phẩm</p>
@@ -456,7 +473,7 @@
 
                 </div>
                 <div class="menu-item">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="Adds_SP.html" class="d-flex align-items-center">
                         <div><img src="../assets/images/icon-ghim.png" alt="" />
 
                         </div>
@@ -477,7 +494,7 @@
 
                 </div>
                 <div class="menu-item">
-                    <a href="#" class="d-flex align-items-center">
+                    <a href="SP_WEB.html" class="d-flex align-items-center">
                         <div><img src="../assets/images/list.png" alt=""></div>
                         <div class="ms-3">
                             <p>Danh sách sản phẩm

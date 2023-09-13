@@ -1,5 +1,8 @@
 .wrapper-login {
     background: url('/assets/images/bg-login.png');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 
 }
 
@@ -14,12 +17,14 @@
 .login-container .login-logo {
     display: flex;
     justify-content: center;
-    padding-top: 15%;
+    padding-top: 20%;
     width: 100%;
 }
 
 .login-container .login-logo img {
     width: 30%;
+    aspect-ratio: 1/1;
+    border-radius: 15px;
 }
 
 .login-container .login-title {
@@ -35,7 +40,7 @@
 }
 
 .form-login {
-    margin-top: 20%;
+    margin-top: 35%;
     width: 100%;
     padding: 0 10%;
 }
@@ -80,9 +85,9 @@
 /* Thiết lập kiểu dáng của checkbox tùy chỉnh */
 .input-check-remember input[type="checkbox"]+label {
     display: inline-block;
-    width: 0.5rem;
+    width: 1rem;
     /* Kích thước chiều rộng của checkbox */
-    height: 0.5rem;
+    height: 1rem;
     /* Kích thước chiều cao của checkbox */
     background-color: #fff;
 

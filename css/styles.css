@@ -5,6 +5,11 @@
 @import url('thong_tin_shop.css');
 @import url('setting_product.css');
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&family=Saira+Extra+Condensed:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Open+Sans:wght@700&family=Saira:wght@700;800&display=swap');
 
 * {
     padding: 0;
@@ -21,6 +26,7 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 button {

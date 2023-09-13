@@ -11,14 +11,14 @@
 </head>
 
 <body>
-    <div class="wrapper-login device-width-height">
+    <div class="wrapper-login">
         <div class="login-container">
             <div class="login-logo d-flex ">
                 <img src="../assets/images/logo.png" alt="logo">
             </div>
 
             <!-- title -->
-            <div class="login-title d-flex justify-content-center mt-4">
+            <div class="login-title d-flex justify-content-center pt-5">
                 <div class="title text-center">
                     TỔNG KHO THỜI TRANG THƯƠNG HIỆU VIỆT
                 </div>
@@ -112,10 +112,13 @@
                     nameError.textContent = '';
                 }
 
-                console.log(isValid);
+
+
 
                 if (!isValid) {
                     event.preventDefault(); // Ngăn form gửi đi nếu có lỗi
+                } else {
+                    window.location.href = '../html/home.html';
                 }
             });
         </script>
